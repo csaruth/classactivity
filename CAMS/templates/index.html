@@ -1,0 +1,256 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+        
+
+    <style>
+        .header2{
+            background-image: url("static/img/im7.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: -2;
+            display: flex;
+            height: 100vh;
+            margin-bottom: 20px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+           
+            
+        }
+        .header2::before{
+            content: "";
+            background-color:black;
+            position: absolute;
+            opacity: .6;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1
+        }
+        .head{
+            width: 10%;
+            height: 30px;
+            position: relative;
+            align-items: center;
+            background-color: transparent;
+            font-size: 22px;
+            
+        }   
+        
+        header{
+          
+            width: 100%;
+            height: 100px;
+            flex-wrap: wrap;
+            display: flex;
+            color:black;
+            font-size: 30px;
+            
+        }
+        
+        .header2{
+            width: 100%;
+            position: relative;
+            border: 0px ;
+        }
+        .wrapper{
+            
+            width: 100%;
+            position: relative;
+            
+            
+            }
+            h1{
+                font-size: 45px;
+            }
+            .wrapper ul{
+            list-style: none;
+            margin-top: 2%;
+            }
+            
+            .wrapper ul li{
+         
+            line-height: 50px;
+            text-align: center;
+            display: flex;
+            float: right;
+            font-size:9px;
+            font-family: Arial, Helvetica, sans-serif;
+            justify-content: space-between;
+            padding: 20px;
+            font-weight: normal;
+            }
+            
+            .wrapper ul li a{
+                color:black;
+                font-size: 20px;
+                margin-top: -40px;
+            }
+            
+            
+            .wrapper ul ul {
+                display: none;
+            }
+            .wrapper ul  li:hover> ul{
+                display: block;
+            }
+            
+            .wrapper ul ul ul{
+                margin-left: 170px;
+                top: 0;
+                position: absolute;
+            }
+            a{
+                text-decoration: none;
+            }
+        .container{
+         background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            z-index: -2;
+            display: flex;
+            height: 50vh;
+            margin-bottom: 20px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            background-image: url("static/img/im4.jpeg");
+            
+        }
+        
+        .container::before{
+            content: "";
+            background-color:black;
+            position: absolute;
+            opacity: .6;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1
+          
+
+        }
+        .container p{
+            color:whitesmoke;
+             
+        }
+        
+        
+        
+        .header2 h1{
+        color: whitesmoke;
+        text-align: center; 
+        font-size: 200%;
+        padding-top: 1px;
+           
+        }
+        a{
+            text-decoration: none;
+            color:ghostwhite;
+            font-size: 25px;
+            text-align: center;
+            
+        } 
+        
+        .footer{
+          position: relative;
+          left:0 ;
+         bottom: 0;
+          width: 100%;
+          height: 29%;
+          text-align: center;
+        font-size: 19px;
+           background-color: black; 
+            
+        }
+        p{
+            color:whitesmoke;
+            font-size: 30px;
+        }
+        
+        h2 a{
+            color: blue;
+            font-size: 19px;
+        }
+        
+        h1 a{
+            color:whitesmoke;
+            font-size: 19px;
+        }
+        li a{
+            color: red;
+        }
+        
+        
+            </style>
+            
+    </head>
+  
+    <body class="body">
+        
+        
+        <header>     
+            <div class="head">
+                <h2>CAMS</h2>
+            </div>
+
+         <div class="wrapper">
+
+            <ul>
+                
+                
+                <li><a href="{% url 'sign_up' %}">sign-up</a></li> 
+                <li><a href="{% url 'loginuser' %}">loginuser</a></li>      
+        
+              
+              <li><a href="{% url 'home' %}">Home</a></li>
+            </ul>  
+          </div>
+    </header>
+ <br>
+ 
+ 
+        <div class="header2">
+           <h1>  CAMS, the best and most flexible 
+       information and communication platform.
+            </h1>    
+            </div>
+        <!-- <img src="{% static 'img/im22.jpg' %}"> -->
+
+        <div class="container">
+          <p>the  best educational activity management system</p>  
+                
+
+  </div>
+       
+
+        <br>
+
+        <div class=" footer">
+
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'services' %}">services</a></li>
+        <p>contact us</p>
+            <a href="ruthmart4">instagram : ruthmart4 </a>
+               <br>
+            <a href="telephone: 09044292230">tel: 09044292230</a>
+            <br>
+            <a href="mailto: akurutie@gmail.com">gmail: cramberry@gmail.com</a>
+        <p>@cramberry</p>
+ </footer>
+</div>
+
+
+    </body>
+</html>

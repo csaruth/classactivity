@@ -1,0 +1,153 @@
+<html>
+    <head>
+          <title>index</title>
+        
+
+    </head>
+    <style>
+
+header{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100px;
+}
+
+
+    .bus{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    margin-bottom: 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-image: url(style/img/im12.jpeg);
+    border-radius: 10px;
+    box-shadow:4px 12px rgb(197, 197, 197), 0 4px 4px  rgb(218, 214, 214);
+    width: 50%;
+    font-size: 20px;
+    line-height: 10px;    
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    top: 10px;
+}
+
+.bus::before{
+    
+    background-color: black;
+    position: absolute;
+    opacity: 0;
+    width: 80%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    
+}
+
+
+
+body{
+   background-color: black;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.wrapper{
+    width: 100%;
+    position: relative;
+    margin-top: -20px;
+    }
+    
+    .wrapper ul{
+    list-style: none;
+    margin-top: 2%;
+    }
+    
+    .wrapper ul li{
+ 
+    line-height: 50px;
+    text-align: center;
+    display: flex;
+    float: right;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+    padding: 20px;
+    font-weight: bold;
+    }
+    
+    .wrapper ul li a{
+        color: ghostwhite;
+    }
+    
+    
+    .wrapper ul ul {
+        display: none;
+    }
+    .wrapper ul  li:hover> ul{
+        display: block;
+    }
+    
+    .wrapper ul ul ul{
+        margin-right: 170px;
+        top: 0;
+        position: absolute;
+    }
+    a{
+        text-decoration: none;
+    }
+
+    .button{
+        font-size: 35PX;
+        color:black;
+        
+    }
+    
+
+
+
+</style>
+    <body>
+       
+
+        
+
+        <form method="get" action="/siginuser/ " >
+
+         <input type="text" name="username" placeholder="your user name"><br><br>
+         <input type="text" name="lastname" placeholder="your last name"><br><br>
+         <input type="text" name="class" placeholder="your class"><br><br>
+         <input type="text" name="email" placeholder="email address"><br><br>
+         <input type="text" name="phonenumber" placeholder="phone number"><br><br>
+         <input type="text" name="password"placeholder="password"><br><br>
+         <input type="text" name="student_id" placeholder="your student id"><br><br>
+         
+
+         <input type="submit"  value="Submit">
+
+
+
+        </form>
+                  
+                      
+
+
+    
+    
+      
+    </body>
+</html>

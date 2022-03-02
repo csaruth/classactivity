@@ -1,0 +1,9 @@
+{% for assignment in ass_list %}<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+<ul>
+    <li> <a href="{{ assignment.file_upload.url }}" download> {{assignment.name}} , {{ assignment.file_upload.url }}</a></li>
+    <input type="file" name="docx" id="">
+    <button type="submit"> Submit</button>
+</ul>
+</form>
+{%endfor%}
